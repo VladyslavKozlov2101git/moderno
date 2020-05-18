@@ -58,3 +58,72 @@
         }
     }
 }
+
+.search{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 533px;
+}
+.search__inner {
+    padding: 155px 0 100px;    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    &-title{
+        margin-bottom: 10px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+    }
+
+    &-text {
+        margin-bottom: 50px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    &-form {
+        max-width: 670px;
+        margin: 0 auto;
+        position: relative;
+        input{
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding-left: 25px;
+            padding-right: 60px;
+            box-sizing: border-box;
+            &::placeholder{
+                color: rgb(144, 164, 174);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        button{
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            right: 20px;
+            top: 16px;
+        } 
+    }
+}
+
+
+.Search_Your_Keywords______ {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(144, 164, 174);
+    line-height: 2.143;
+    text-align: left;
+    position: absolute;
+    left: 649.134px;
+    top: 494.249px;
+    z-index: 521;
+  }
+  
