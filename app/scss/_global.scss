@@ -43,9 +43,16 @@ body{
     padding: 0 30px;
 }
 
+
+@media(max-width:720px){
+    .container-fluid{
+        padding: 0 15px;
+    }
+}
+
 .title{
+    @include f700;
     color: $bg;
-    font-weight: 700;
     font-size: 36px;
     line-height: 60px;
     text-align: center;
@@ -56,8 +63,3 @@ body{
     margin-right: 13px;
 }
 
-@media(max-width:720px){
-    .container-fluid{
-        padding: 0 15px;
-    }
-}
