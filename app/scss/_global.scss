@@ -7,6 +7,26 @@
 *::after{
     box-sizing: inherit;
 }
+ //Push down the footer START
+html,  
+body{
+    height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column; 
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;  
+}
+
+
+ //Push down the footer END
 
 a{
     display: inline-block;
@@ -31,6 +51,8 @@ body{
     margin: 0;
 }
 
+
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -50,6 +72,10 @@ body{
     }
 }
 
+.page-content{
+    background-color: $grey;
+}
+
 .title{
     @include f700;
     color: $bg;
@@ -63,3 +89,32 @@ body{
     margin-right: 13px;
 }
 
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0 40px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            &+li{
+                padding-left: 24px;
+                &::before{
+                    content: '-';
+                    position: absolute;
+                    left: 8px;
+                    color: $green;
+                }
+            }
+        &:last-child{
+            a,
+            span{
+                color: $bg;
+            }
+        }
+    }
+        a{
+            color: #b0bec5;
+        }              
+    }
+}

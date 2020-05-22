@@ -6,6 +6,7 @@
   "dependencies": {
     "browser": "^0.2.6",
     "g": "^2.0.1",
+    "ion-rangeslider": "^2.3.1",
     "sync": "^0.2.5"
   },
   "devDependencies": {
