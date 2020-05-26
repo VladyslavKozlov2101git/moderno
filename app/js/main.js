@@ -30,9 +30,15 @@ $(function(){
         readOnly: true
     });
 
-    var mixer = mixitup('.products__inner-box');
-
     
+
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle();
+    });
+
+    $('.header__btn-menu').on('click', function(){
+        $('.header__box').toggleClass('active');
+    });
 
     
 
@@ -42,6 +48,8 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
     });
+
+    var mixer = mixitup('.products__inner-box');
 
     
     
