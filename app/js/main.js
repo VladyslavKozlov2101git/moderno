@@ -1,4 +1,6 @@
 $(function(){
+
+    
     
     $('.icon-th-list').on('click', function(){
         $('.product-page__items>.products__item').addClass('list'),
@@ -27,7 +29,7 @@ $(function(){
         grid: false
     });
 
-    
+    $('input[type="file"], select.custom__select').styler();
 
     $(".rate-star").rateYo({
         rating: 4,
@@ -48,7 +50,7 @@ $(function(){
     });
         
 
-    $('input[type="file"], select').styler();
+    
     
 
     $('.menu__btn').on('click', function(){
@@ -68,6 +70,31 @@ $(function(){
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive: [
+            {
+              breakpoint: 1900,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            }, 
+            {
+                breakpoint: 1441,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 801,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+              },              
+        ]
     });
     
     
