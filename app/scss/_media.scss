@@ -26,7 +26,7 @@
 @media(max-width:1225px){
     .product-slider__inner{
         .products__item{
-            max-width: 350px;
+            min-width: 350px;
         }
     }
 }
@@ -132,6 +132,7 @@
         flex-wrap: wrap;
         margin-left: -20px;
     }
+    
 }
 
 
@@ -304,10 +305,10 @@
 @media(max-width:800px){
     .product-slider__inner{
         .products__item{
-            min-width: 300px;
             max-width: 100%;
         }
     }
+    
 }
 
 @media(max-width:740px){

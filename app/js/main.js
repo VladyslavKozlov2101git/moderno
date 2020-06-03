@@ -88,7 +88,7 @@ $(function(){
                 }
               },
               {
-                breakpoint: 801,
+                breakpoint: 960,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
